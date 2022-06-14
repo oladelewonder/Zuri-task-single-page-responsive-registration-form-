@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+@font-face {
+  font-family: poppins;
+  src: url(https://fonts.google.com/specimen/Poppins);
+}
+body {
+    background-image: url(img/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: poppons,serif;
+    
+  
+}
+#overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:hsl(0,100%,74%);
+  z-index: 2;
+  cursor: pointer;
+}
+.text{
+  position:absolute;
+  color: #ffffff;
+  font-family:poppins,serif;
+  line-height: 1;
+  left:11%;
+  top:30%;
+  font-size:30px;
+  
+}
+.note{
+  position: absolute;
+  color: #ffffff;
+  font-family: poppins, serif;
+  left: 11%;
+  top: 52%;
+  font-size:16px;
+}
+.try-btn{
+  position: absolute;
+  color: #ffffff;
+  background-color: hsl(248, 32%, 49%);
+  font-family: poppins,serif;
+  font-size: 1em;
+  border: 0px;
+  width:40%;
+  height: 41px;
+  border-radius:5px;
+  left:50%;
+  top:10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  
+}
+.try-btn:hover{
+  color:hsl(248, 32%, 49%);
+  background-color:#ffff;
+}
+.fm-box{
+  position: absolute;
+  background-color:#ffff;
+  border:0px;
+  border-radius:5px;
+  width:40%;
+  left: 50%;
+  top: 18%;
+  
+  
+}

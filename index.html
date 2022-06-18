@@ -21,21 +21,32 @@
       watching scripted tutorials is great, but understanding how<br>
       developers think is invaluable.
     </p>
-  <form>
+  <form name = "registerationform" onsubmit="return validateForm()">
     <div>
       <button class="try-btn">
         <b>Try it free 7 days</b> then $20/mo. thereafter
       </button>
     </div>
     <div class="fm-box">
-      <input type="text" class="input-box" placeholder="First Name"><br>
-      <input type="text" class="input-box" placeholder="Last Name"><br>
-      <input type="email" class="input-box" placeholder="Email Address"><br>
-      <input type="password" class="input-box" placeholder="Password"><br>
+      <input type="text" class="input-box" placeholder="First Name" id="firstname" name="firstname" required><br>
+      <input type="text" class="input-box" placeholder="Last Name" name="lastname" required><br>
+      <input type="email" class="input-box" placeholder="Email Address" id="email" name="email" required><br>
+      <input type="password" class="input-box" placeholder="Password" name="password" required><br>
+      <button class="claim-btn" type="submit" id="submit" onclick="validation()">CLAIM YOUR FREE TRIAL</button><br>
+      <p class="dwn-p">
+      By clicking the button you are agreeing to our <a href="T/s.com">Terms and Services</a>
+    </p>
+      
     </div>
+    
   </form>
 
-  <script src="script.js"></script>
+  <script src="script.js">
+    required
+validationErrors={{
+  isDefaultRequiredValue: 'Field is required'
+}}
+  </script>
 </body>
 
 </html>
